@@ -1,0 +1,29 @@
+{
+  "name": "surway",
+  "version": "1.0.0",
+  "description": "This is a feedback website where the corporations can use to collect feedback",
+  "main": "index.js",
+  "engines": {
+    "node": "13.3.0",
+    "npm": "6.13.1"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "nodemon server/index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Vishal Reddy Kallem",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.0.2",
+    "cookie-session": "^1.4.0",
+    "create-react-app": "^3.3.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.7",
+    "nodemon": "^2.0.2",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0",
+    "prettier": "^1.19.1"
+  }
+}
